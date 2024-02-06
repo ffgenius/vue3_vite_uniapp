@@ -9,6 +9,10 @@ module.exports = {
 		'plugin:vue/vue3-essential',
 		'./.eslintrc-auto-import.json'
 	],
+	'globals': {
+		'uni': true,
+		'wx': true
+	},
 	'overrides': [
 		{
 			'env': {

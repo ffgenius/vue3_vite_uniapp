@@ -1,9 +1,14 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { presetUni } from '@uni-helper/unocss-preset-uni'
 
 export default defineConfig({
   presets: [
     presetAttributify({}),
-    presetUno(),
+    presetUni(),
     presetIcons()
   ],
+  transformers: [
+    transformerDirectives(),
+    transformerVariantGroup()
+  ]
 })

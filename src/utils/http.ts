@@ -18,7 +18,7 @@ const httpInterceptor = {
       }
     }
     // 处理请求地址，如果以 http 开头则不做处理，否则加上 baseUrl
-    if (options.url.startsWith('http')) {
+    if (!options.url.startsWith('http')) {
       options.url = baseUrl + options.url
     }
     // 处理请求超时时间，默认为 3 秒

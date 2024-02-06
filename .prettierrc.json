@@ -7,5 +7,8 @@
   "useTabs": false,
   "bracketSpacing": true,
   "trailingComma": "none",
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "space-before-function-paren": true,
+  "space-before-blocks": true,
+  "space-in-parens": true
 }
